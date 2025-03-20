@@ -14,3 +14,15 @@ def dec2bin(num:int):
         binary = (6- len(binary))*'0' + binary
 
     return binary
+
+def bin2dot(bin):
+
+    dot = ''
+    
+    for i in bin:
+        if i == '1':
+            dot = '●' + dot
+        else:
+            dot = '○' + dot
+    
+    return dot[::-1]
